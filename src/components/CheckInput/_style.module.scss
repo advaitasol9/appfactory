@@ -1,0 +1,16 @@
+@import '../../scss/config';
+
+.checkInput {
+  @extend %row-start;
+  gap: 5px;
+
+  input {
+    height: 14px;
+    width: 14px;
+  }
+
+  label {
+    @extend %reg14p;
+    color: $dark-text;
+  }
+}

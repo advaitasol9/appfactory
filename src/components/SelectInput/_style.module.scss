@@ -1,0 +1,45 @@
+@import '../../scss/config';
+
+.select-input {
+  display: flex;
+  flex-direction: column;
+  label {
+    @extend %reg14p;
+    color: $light-text2;
+  }
+  .input-row {
+    @extend %row-between;
+    border: 1px solid #587090;
+    box-sizing: border-box;
+    padding: 0px 10px;
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    margin-top: 7px;
+    select {
+      width: 100%;
+      background-color: transparent;
+      border-style: none;
+      caret-color: #587090;
+      color: $dark-text;
+      height: '100%';
+    }
+    select:focus {
+      outline: none;
+    }
+  }
+}
+
+.select-input--error {
+  label {
+    color: $error;
+  }
+  .input-row {
+    border: 1px solid $error;
+  }
+  p {
+    @extend %reg12p;
+    color: $error;
+    margin-top: 5px;
+  }
+}

@@ -1,0 +1,45 @@
+@import '../../scss/config';
+
+.avatar {
+  @extend %row-start;
+  gap: 7px;
+  .imgWrapper {
+    display: flex;
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    background-color: #e4f4ff;
+    border: 3px solid #41b1ff;
+    @extend %all-center;
+    img {
+      height: 46px;
+      width: 46px;
+    }
+    p {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 27px;
+      color: #1c689c;
+    }
+  }
+  .labelWrapper {
+    width: calc(100% - 48px - 7px);
+
+    .label {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      @extend %med16p;
+      color: $dark-text;
+    }
+    .sub-label {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      @extend %reg14p;
+      color: $light-text;
+    }
+  }
+}

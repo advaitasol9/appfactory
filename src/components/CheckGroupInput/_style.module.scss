@@ -1,0 +1,26 @@
+@import '../../scss/config';
+
+.check-input-group {
+  display: flex;
+  flex-direction: column;
+  .label {
+    @extend %reg14p;
+    color: $light-text2;
+  }
+  .options {
+    @extend %row-start;
+    gap: 5px;
+    margin-top: 7px;
+  }
+}
+
+.check-input-group--error {
+  .label {
+    color: $error;
+  }
+  .error {
+    margin-top: 5px;
+    @extend %reg12p;
+    color: $error;
+  }
+}
