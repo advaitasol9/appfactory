@@ -6,6 +6,7 @@
   label {
     @extend %reg14p;
     color: $light-text2;
+    margin-bottom: 7px;
   }
   .input-row {
     @extend %row-between;
@@ -15,7 +16,6 @@
     width: 100%;
     height: 50px;
     border-radius: 5px;
-    margin-top: 7px;
     select {
       width: 100%;
       background-color: transparent;
