@@ -13,6 +13,12 @@ export type {SelectInputProps} from './components/SelectInput'
 export {default as CheckGroupInput} from "./components/CheckGroupInput"
 export type {CheckGroupInputProps} from "./components/CheckGroupInput"
 
+export {default as Button} from "./components/Button"
+export type {ButtonProps} from "./components/Button"
+
+export {default as Spinner} from "./components/Spinner"
+
+
 export {
     handleSelectInputChange,
     handleCheckGroupInputChange,
