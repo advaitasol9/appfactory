@@ -8,6 +8,7 @@ export interface SelectInputProps
   label?: string;
   value?: string | number | string[];
   options: FormDataTypeProps[];
+  info?: string | JSX.Element;
   error?: string;
 }
 
@@ -16,6 +17,7 @@ const SelectInput = ({
   options,
   className,
   error,
+  info,
   ...rest
 }: SelectInputProps) => {
   return (
@@ -34,7 +36,13 @@ const SelectInput = ({
           ))}
         </select>
       </div>
-      {error && <p>{error}</p>}
+      {(info || error) && error ? (
+        <p className={classes['error']}>{error}</p>
+      ) : typeof info == 'string' ? (
+        <p className={classes['info']}>{info}</p>
+      ) : (
+        info
+      )}
     </div>
   );
 };

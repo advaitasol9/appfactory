@@ -28,6 +28,11 @@
       outline: none;
     }
   }
+  .info {
+    @extend %reg12p;
+    color: $light-text2;
+    margin-top: 5px;
+  }
 }
 
 .select-input--error {
@@ -37,7 +42,7 @@
   .input-row {
     border: 1px solid $error;
   }
-  p {
+  .error {
     @extend %reg12p;
     color: $error;
     margin-top: 5px;

@@ -2,6 +2,8 @@ import { ComponentMeta, ComponentStory } from '@storybook/react';
 import React from 'react';
 import SelectInput from '../components/SelectInput';
 
+// const Link = () => <a href={'https://www.react.com'}>react</a>;
+
 export default {
   title: 'Select Input',
   component: SelectInput,
@@ -24,4 +26,6 @@ Primary.args = {
   onChange: event => {
     console.log(event.target.value);
   },
+  // info: <Link />,
+  info: 'Field cannot be empty',
 };
