@@ -10,6 +10,7 @@ export interface ButtonProps
   leftElement?: ReactNode;
   rightElement?: ReactNode;
   children: ReactNode;
+  className?: string;
 }
 
 const Button: FC<ButtonProps> = ({
@@ -18,11 +19,12 @@ const Button: FC<ButtonProps> = ({
   leftElement,
   rightElement,
   children,
+  className,
   ...props
 }) => {
   return (
     <button
-      className={classNames(classes['button'], {
+      className={classNames(classes['button'], className, {
         [classes['button-default']]: variant == 'Default',
         [classes['button-outline']]: variant == 'Outline',
         [classes['button-link']]: variant == 'Link',
