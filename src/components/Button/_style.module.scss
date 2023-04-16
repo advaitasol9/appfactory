@@ -9,6 +9,7 @@
   .wrapper {
     @extend %row-start;
     gap: 5px;
+    justify-content: center;
   }
 }
 
